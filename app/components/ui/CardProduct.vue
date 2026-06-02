@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col max-w-xs bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition hover:shadow-xl">
-    <div class="p-6 bg-linear-to-b from-orange-100 to-white">
+    <div class="p-6 bg-linear-to-b from-orange-100 to-white grow">
       <h2 class="text-2xl font-bold text-gray-900 mb-1">{{ product.title }}</h2>
       <p class="text-gray-600 text-sm mb-4">{{ product.description }}</p>
       <span class="text-lg font-bold text-gray-900">

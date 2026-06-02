@@ -1,5 +1,5 @@
 <template>
-    <footer class="px-40 py-10">
+    <footer class="px-40 py-10 bg-[#f8f8f8]">
         <div class="grid grid-cols-2">
             <div class="mr-12 text-justify">
                 <img src="~/assets/images/lulusMurniASN .png" alt="logo" class="h-13 w-auto mb-4">
@@ -14,12 +14,12 @@
             </div>
             <div class="grid grid-cols-3 gap-5">
                 <ul class="flex flex-col gap-4">
-                    <li><NuxtLink to="/">Apa itu ASN atau CPNS?</NuxtLink></li>
-                    <li><NuxtLink to="/">Portofolio</NuxtLink></li>
-                    <li><NuxtLink to="/">Benefit</NuxtLink></li>
-                    <li><NuxtLink to="/">Pilihan Paket</NuxtLink></li>
-                    <li><NuxtLink to="/">Testimoni</NuxtLink></li>
-                    <li><NuxtLink to="/">FAQ</NuxtLink></li>
+                    <li><NuxtLink to="#CPNS" class="text-sm">Apa itu ASN atau CPNS?</NuxtLink></li>
+                    <li><NuxtLink to="#Masalah" class="text-sm">Masalah CPNS</NuxtLink></li>
+                    <li><NuxtLink to="#Solusi" class="text-sm">Solusi CPNS</NuxtLink></li>
+                    <li><NuxtLink to="#Benefit" class="text-sm">Benefit</NuxtLink></li>
+                    <li><NuxtLink to="#Paket" class="text-sm">Pilihan Paket</NuxtLink></li>
+                    <li><NuxtLink to="#FAQ" class="text-sm">FAQ</NuxtLink></li>
                 </ul>
 
                 <div class="flex flex-col gap-4 justify-self-center">

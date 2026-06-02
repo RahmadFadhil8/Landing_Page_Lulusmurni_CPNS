@@ -1,5 +1,5 @@
 <template>
-  <section class="py-12 px-4 items-center" id="Paket">
+  <section class="py-12 px-4 my-10 items-center scroll-mt-24" id="Paket">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold text-center">Pilih Paket CPNS</h2>
       <p class="text-center mb-8">Pilih paket yang paling sesuai dengan kebutuhanmu. Dan nikmati berbagai benefit dari Lulusmurni.com</p>

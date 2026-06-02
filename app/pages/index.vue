@@ -1,6 +1,9 @@
 <template>
     <SectionsHeroSection />
+    <SectionsCPNSSection />
+    <SectionsMasalahCPNSSection />
+    <SectionsSolusiCPNSSection />
+    <SectionsBenefit />
     <SectionsProductSection />
-    <SectionsAboutSection />
-    <SectionsBlog />
+    <SectionsFAQSection />
 </template>

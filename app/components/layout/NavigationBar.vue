@@ -1,21 +1,45 @@
 <template>
   <nav 
     :class="[
-      'fixed w-full top-0 z-50 px-24 py-4 flex justify-between items-center transition-all duration-300',
+      'fixed w-full top-0 z-50 transition-all duration-300',
       isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
     ]"
   >
-    <NuxtLink to="/">
-      <img src="~/assets/images/lulusMurniASN .png" alt="logo" class="h-11 w-auto">
-    </NuxtLink> 
-    <ul class="flex gap-10">
-      <li><NuxtLink to="/" class="text-sm">Apa itu ASN atau CPNS?</NuxtLink></li>
-      <li><NuxtLink to="/" class="text-sm">Portofolio</NuxtLink></li>
-      <li><NuxtLink to="/" class="text-sm">Benefit</NuxtLink></li>
-      <li><NuxtLink to="/" class="text-sm">Pilihan Paket</NuxtLink></li>
-      <li><NuxtLink to="/" class="text-sm">Testimoni</NuxtLink></li>
-      <li><NuxtLink to="/" class="text-sm">FAQ</NuxtLink></li>
-    </ul>
+    <div class="flex justify-between items-center px-6 lg:px-24 py-4">
+      <NuxtLink to="/">
+        <img src="~/assets/images/lulusMurniASN .png" alt="logo" class="h-11 w-auto">
+      </NuxtLink> 
+      <ul class="hidden lg:flex gap-10">
+        <li><NuxtLink to="#CPNS" class="text-sm">Apa itu ASN atau CPNS?</NuxtLink></li>
+        <li><NuxtLink to="#Masalah" class="text-sm">Masalah CPNS</NuxtLink></li>
+        <li><NuxtLink to="#Solusi" class="text-sm">Solusi CPNS</NuxtLink></li>
+        <li><NuxtLink to="#Benefit" class="text-sm">Benefit</NuxtLink></li>
+        <li><NuxtLink to="#Paket" class="text-sm">Pilihan Paket</NuxtLink></li>
+        <li><NuxtLink to="#FAQ" class="text-sm">FAQ</NuxtLink></li>
+      </ul>
+  
+      <!-- Mobile Button -->
+      <button
+        @click="isMenuOpen = !isMenuOpen"
+        class="lg:hidden"
+      >
+        ☰
+      </button>
+    </div>
+
+    <div
+      v-if="isMenuOpen"
+      class="lg:hidden bg-white shadow-lg w-auto"
+    >
+      <ul class="flex flex-col">
+        <li><NuxtLink to="#CPNS" class="block px-6 py-4">CPNS</NuxtLink></li>
+        <li><NuxtLink to="#Masalah" class="block px-6 py-4">Masalah</NuxtLink></li>
+        <li><NuxtLink to="#Solusi" class="block px-6 py-4">Solusi</NuxtLink></li>
+        <li><NuxtLink to="#Benefit" class="block px-6 py-4">Benefit</NuxtLink></li>
+        <li><NuxtLink to="#Paket" class="block px-6 py-4">Paket</NuxtLink></li>
+        <li><NuxtLink to="#FAQ" class="block px-6 py-4">FAQ</NuxtLink></li>
+      </ul>
+    </div>
   </nav>
 </template>
 
@@ -24,6 +48,7 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const isScrolled = ref(false);
+const isMenuOpen = ref(false)
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50;
