@@ -4,7 +4,7 @@
     <div class="bg-blue-100 rounded-[1.25rem] p-8 flex flex-col gap-5">
       
       <div class="flex flex-col gap-2">
-        <h5 class="font-bold text-2xl text-blue-950 leading-tight">
+        <h5 class="font-bold text-lg text-blue-950 leading-tight">
           {{ Judul }}
         </h5>
         

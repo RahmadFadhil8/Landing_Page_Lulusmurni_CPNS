@@ -1,9 +1,9 @@
 <template>
     <section class="py-12 px-4 my-10 items-center scroll-mt-24" id="Masalah">
-        <div class="flex flex-col justify-center items-center px-48">
-            <h4 class="font-bold text-3xl mb-4">Masih Belajar CPNS Tanpa Tahu Seberapa Siap Kamu?</h4>
-            <p class="mb-10 text-center">Banyak peserta CPNS menghabiskan waktu berbulan-bulan untuk belajar, namun tetap merasa kurang siap saat hari ujian tiba. Bukan karena kurang usaha, tetapi karena belum pernah merasakan simulasi yang benar-benar menyerupai tes CAT sebenarnya.</p>
-            <div class="grid grid-cols-4 gap-6">
+        <div class="flex flex-col lg:justify-center items-center px-14 lg:px-48">
+            <h4 class="font-bold text-2xl text-center lg:text-3xl mb-4">Masih Belajar CPNS Tanpa Tahu Seberapa Siap Kamu?</h4>
+            <p class="mb-10 text-center text-base">Banyak peserta CPNS menghabiskan waktu berbulan-bulan untuk belajar, namun tetap merasa kurang siap saat hari ujian tiba. Bukan karena kurang usaha, tetapi karena belum pernah merasakan simulasi yang benar-benar menyerupai tes CAT sebenarnya.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <UiCardMasalah 
                 v-for="item in Masalah"
                 :Judul="item.Judul"

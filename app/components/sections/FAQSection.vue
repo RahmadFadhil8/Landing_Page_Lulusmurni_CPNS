@@ -1,25 +1,25 @@
 <template>
     <section class="py-12 px-4 my-10 items-center scroll-mt-24" id="FAQ">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-6">Pertanyaan yang Sering Diajukan</h2>
-            <div class="grid grid-cols-2 gap-6 items-center">
-                <div class="flex flex-col gap-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-2xl lg:text-3xl font-bold text-center mb-6">Pertanyaan yang Sering Diajukan</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="order-2 lg:order-1 flex flex-col gap-4">
                     <div class="space-y-4">
                         <div v-for="(item, index) in Faq" 
                     :key="index" class="border rounded-lg bg-white shadow-sm overflow-hidden transition-colors duration-300 border-gray-200">
                             <button @click="TombolFAQ(index)" class="w-full flex justify-between items-center px-6 py-4 cursor-pointer hover:bg-gray-50 transition-colors">
-                                <h3>{{ item.Pertanyaan }}</h3>
+                                <h3 class="text-sm lg:text-base font-bold">{{ item.Pertanyaan }}</h3>
                                 <img src="~/assets/icon/faq-icon.svg" class="transition-transform duration-300":class="activeIndex === index ? 'rotate-90' : ''" alt="icon">
                             </button>
                             
                             <div v-show="activeIndex === index" class="p-3 pl-4 pt-3 lg:pl-6 bg-gray-100">
-                                <p>{{ item.Jawaban }}</p>
+                                <p class="text-sm lg:text-base">{{ item.Jawaban }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img src="~/assets/images/Gambar ASN.png" alt="">
+                <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+                    <img src="~/assets/images/Gambar ASN2.png" alt="" class="h-64 md:h-80 lg:h-80 w-auto">
                 </div>
             </div>
         </div>

@@ -2,7 +2,8 @@
   <nav 
     :class="[
       'fixed w-full top-0 z-50 transition-all duration-300',
-      isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+      isScrolled ? 'bg-white shadow-md' : 'bg-transparent',
+      isMenuOpen ? 'bg-white shadow-md' : 'bg-transparent',
     ]"
   >
     <div class="flex justify-between items-center px-6 lg:px-24 py-4">
@@ -28,9 +29,12 @@
     </div>
 
     <div
-      v-if="isMenuOpen"
-      class="lg:hidden bg-white shadow-lg w-auto"
+      :class="[
+        'lg:hidden overflow-hidden transition-all duration-300 ease-in-out',
+        isMenuOpen ? 'max-h-96 opacity-100 tranlate-y-0' : 'max-h-0 opacity-0 -translate-y-2'
+      ]"
     >
+    <div class="bg-white shadow-lg">
       <ul class="flex flex-col">
         <li><NuxtLink to="#CPNS" class="block px-6 py-4">CPNS</NuxtLink></li>
         <li><NuxtLink to="#Masalah" class="block px-6 py-4">Masalah</NuxtLink></li>
@@ -39,6 +43,7 @@
         <li><NuxtLink to="#Paket" class="block px-6 py-4">Paket</NuxtLink></li>
         <li><NuxtLink to="#FAQ" class="block px-6 py-4">FAQ</NuxtLink></li>
       </ul>
+    </div>
     </div>
   </nav>
 </template>

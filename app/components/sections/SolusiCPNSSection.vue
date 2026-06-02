@@ -1,13 +1,15 @@
 <template>
     <section class="py-12 px-4 my-10 items-center bg-orange-50 scroll-mt-24" id="Solusi">
-        <div class="px-48">
-            <div class="grid grid-cols-2 gap-4 mb-4">
-                <div>
-                    <h4 class="font-bold text-3xl mb-4">Kami Membantu Kamu Belajar dengan Lebih Terarah</h4>
+        <div class="px-14 lg:px-48">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <div class="text-center lg:text-left">
+                    <h4 class="font-bold text-2xl lg:text-3xl mb-4">Kami Membantu Kamu Belajar dengan Lebih Terarah</h4>
                     <p class="mb-4">Persiapan CPNS bukan hanya soal banyak belajar, tetapi juga memahami kemampuan diri, membiasakan diri dengan sistem CAT, dan berlatih menggunakan soal yang sesuai standar terbaru.</p>
-                    <UiButton />
+                    <div class="flex justify-center lg:justify-start">
+                        <UiButton />
+                    </div>
                 </div>
-                <div class="flex flex-col justify-end items-end">
+                <div class="hidden lg:flex lg:justify-end items-end">
                     <UiSolusi 
                     v-for="item in Solusi1"
                     :Judul="item.Judul"
@@ -15,12 +17,19 @@
                     />
                 </div>
             </div>
-            <div class="grid grid-cols-3 gap-4">
-                <UiSolusi 
-                v-for="item in Solusi2"
-                :Judul="item.Judul"
-                :SubJudul="item.SubJudul"
-                />
+            <div class="flex justify-center items-center">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <UiSolusi 
+                    v-for="item in Solusi2"
+                    :Judul="item.Judul"
+                    :SubJudul="item.SubJudul"
+                    />
+                    <UiSolusi 
+                        v-for="item in Solusi1"
+                        :Judul="item.Judul"
+                        :SubJudul="item.SubJudul"
+                         class="lg:hidden"/>
+                </div>
             </div>
         </div>
     </section>
