@@ -11,9 +11,9 @@
         <img src="~/assets/images/lulusMurniASN .png" alt="logo" class="h-11 w-auto">
       </NuxtLink> 
       <ul class="hidden lg:flex gap-10">
-        <li><NuxtLink to="#CPNS" class="text-sm">Apa itu ASN atau CPNS?</NuxtLink></li>
-        <li><NuxtLink to="#Masalah" class="text-sm">Masalah CPNS</NuxtLink></li>
-        <li><NuxtLink to="#Solusi" class="text-sm">Solusi CPNS</NuxtLink></li>
+        <li><NuxtLink to="#CPNS" class="text-sm">Apa itu CPNS?</NuxtLink></li>
+        <li><NuxtLink to="#Masalah" class="text-sm">Masalah</NuxtLink></li>
+        <li><NuxtLink to="#Solusi" class="text-sm">Solusi</NuxtLink></li>
         <li><NuxtLink to="#Benefit" class="text-sm">Benefit</NuxtLink></li>
         <li><NuxtLink to="#Paket" class="text-sm">Pilihan Paket</NuxtLink></li>
         <li><NuxtLink to="#FAQ" class="text-sm">FAQ</NuxtLink></li>

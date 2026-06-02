@@ -1,7 +1,7 @@
 <template>
     <section class="py-12 px-4 my-10 items-center scroll-mt-24" id="Benefit">
         <div class="flex flex-col justify-center items-center">
-            <h4 class="font-bold text-2xl lg:text-3xl mb-4">Kenapa Peserta Memilih Tryout Kami?</h4>
+            <h4 class="font-bold text-2xl text-center lg:text-3xl mb-4">Kenapa Peserta Memilih Tryout Kami?</h4>
 
             <!-- mobile -->
             <div class="flex flex-col justify-center gap-4 lg:hidden items-stretch">
