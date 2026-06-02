@@ -3,7 +3,7 @@
         <div class="max-w-5xl mx-auto">
             <h2 class="text-2xl lg:text-3xl font-bold text-center mb-6">Pertanyaan yang Sering Diajukan</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div class="order-2 lg:order-1 flex flex-col gap-4">
+                <div class="flex flex-col gap-4">
                     <div class="space-y-4">
                         <div v-for="(item, index) in Faq" 
                     :key="index" class="border rounded-lg bg-white shadow-sm overflow-hidden transition-colors duration-300 border-gray-200">
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+                <div class="hidden lg:flex justify-center lg:justify-end">
                     <img src="~/assets/images/Gambar ASN2.png" alt="" class="h-64 md:h-80 lg:h-80 w-auto">
                 </div>
             </div>

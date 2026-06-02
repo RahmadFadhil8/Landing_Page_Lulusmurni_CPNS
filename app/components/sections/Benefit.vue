@@ -5,7 +5,7 @@
 
             <!-- mobile -->
             <div class="flex flex-col justify-center gap-4 lg:hidden items-stretch">
-                <div class="flex justify-center w-full">
+                <div class="hidden lg:flex justify-center w-full">
                     <img
                     src="~/assets/images/TryoutKami.png"
                     alt=""
