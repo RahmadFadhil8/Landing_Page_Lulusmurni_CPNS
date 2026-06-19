@@ -13,7 +13,7 @@
                     >
                 </div>
 
-                <UiBenefitCard
+                <CardsBenefit
                 v-for="item in [...benefit1, ...benefit2]"
                 :key="item.Judul"
                 :Judul="item.Judul"
@@ -24,7 +24,7 @@
             <!-- tablet & dekstop -->
                 <div class="hidden lg:grid grid-cols-[1fr_auto_1fr] gap-8 items-center">
                     <div class="flex flex-col gap-8 mt-7">
-                        <UiBenefitCard 
+                        <CardsBenefit
                         v-for="item in benefit1"
                         :Judul="item.Judul"
                         :subJudul="item.subJudul"
@@ -34,7 +34,7 @@
                         <img src="~/assets/images/TryoutKami.png" alt="" class="w-auto h-96">
                     </div>
                     <div class="flex flex-col gap-8 mt-7">
-                        <UiBenefitCard 
+                        <CardsBenefit 
                         v-for="item in benefit2"
                         :Judul="item.Judul"
                         :subJudul="item.subJudul"

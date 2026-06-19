@@ -5,7 +5,7 @@
       <p class="text-center mb-8">Pilih paket yang paling sesuai dengan kebutuhanmu. Dan nikmati berbagai benefit dari Lulusmurni.com</p>
       <div class="flex justify-center">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-          <UiCardProduct 
+          <CardsProduct
             v-for="item in products" 
             :key="item.id" 
             :product="item" 

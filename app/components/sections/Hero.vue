@@ -5,7 +5,9 @@
                 <h1 class="font-bold text-3xl lg:font-bold lg:text-5xl text-center lg:text-start mb-6 leading-tight">Persiapkan CPNS 2026 Lebih Terarah & Terukur</h1>
                 <p class="text-base text-center lg:text-start mb-6">Latihan menggunakan soal-soal terupdate sesuai standar terbaru BKN, lengkap dengan pembahasan, simulasi CAT, dan penilaian otomatis untuk membantu kamu lebih siap menghadapi seleksi CPNS.</p>
                 <div class="flex justify-center lg:justify-start">
-                    <UiButton/>
+                    <UiButton class="font-bold text-white">
+                        Daftar Sekarang
+                    </UiButton>
                 </div>
             </div>
             <div class="w-full flex justify-center lg:justify-end">

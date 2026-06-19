@@ -7,9 +7,9 @@
                     Lulusmurni.com adalah platform ujian CAT/CBT, tryout, dan sertifikasi berbasis online yang praktis, fleksibel, dan terpercaya. Dirancang untuk memberikan pengalaman belajar interaktif, mendukung persiapanmu secara maksimal, dan membantu meraih karir impian.
                 </p>
                 <div class="flex gap-2 mt-4 justify-start">
-                    <NuxtLink to="https://www.facebook.com/people/Lulusmurnidotcom/61575286704690/?_rdc=1&_rdr#"><img src="~/assets/icon/ic_baseline-facebook.svg" alt=""></NuxtLink>
-                    <NuxtLink to="https://www.instagram.com/lulusmurnidotcom/"><img src="~/assets/icon/mdi_instagram.svg" alt=""></NuxtLink>
-                    <NuxtLink to="https://x.com/Lulusmurnicom"><img src="~/assets/icon/mdi_twitter.svg" alt=""></NuxtLink>
+                    <NuxtLink :to= FACEBOOK><img src="~/assets/icon/ic_baseline-facebook.svg" alt=""></NuxtLink>
+                    <NuxtLink :to= INSTAGRAM><img src="~/assets/icon/mdi_instagram.svg" alt=""></NuxtLink>
+                    <NuxtLink :to= TWITTER ><img src="~/assets/icon/mdi_twitter.svg" alt=""></NuxtLink>
                 </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
@@ -24,7 +24,7 @@
 
                 <div class="flex justify-center text-center border-t border-black/20 text-xs lg:hidden sm:hidden"></div>
 
-                <div class="flex flex-col gap-4 text-left lg:justify-self-center">
+                <div class="flex flex-col gap-4 text-left">
                     <p>Jam Operasional</p>
                     <p>Setiap Hari</p>
                     <p>09.00 - 21.00</p>
@@ -38,12 +38,12 @@
                         <p>Kontak</p>
                         <div class="flex gap-3 mt-2">
                             <img src="~/assets/icon/ic_baseline-phone.svg" alt="">
-                            <p class="font-bold">0822-1322-2085</p>
+                            <p class="font-bold">{{ PHONE_NUMBER }}</p>
                         </div>
                     </div>
                     <div class="flex gap-3">
                         <img src="~/assets/icon/ic_baseline-email.svg" alt="">
-                        <p class="font-bold">halo@lulusmurni.com</p>
+                        <p class="font-bold">{{ EMAIL }}</p>
                     </div>
                 </div>
             </div>
@@ -55,3 +55,7 @@
         </div>
     </footer>
 </template>
+
+<script setup lang="ts">
+import {PHONE_NUMBER, EMAIL, TWITTER, FACEBOOK, INSTAGRAM} from "~/constants";
+</script>

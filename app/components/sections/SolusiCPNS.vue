@@ -6,11 +6,13 @@
                     <h4 class="font-bold text-2xl lg:text-3xl mb-4">Kami Membantu Kamu Belajar dengan Lebih Terarah</h4>
                     <p class="mb-4">Persiapan CPNS bukan hanya soal banyak belajar, tetapi juga memahami kemampuan diri, membiasakan diri dengan sistem CAT, dan berlatih menggunakan soal yang sesuai standar terbaru.</p>
                     <div class="flex justify-center lg:justify-start">
-                        <UiButton />
+                        <UiButton class="font-bold text-white">
+                            Daftar Sekarang
+                        </UiButton>
                     </div>
                 </div>
                 <div class="hidden lg:flex lg:justify-end items-end">
-                    <UiSolusi 
+                    <CardsSolusi 
                     v-for="item in Solusi1"
                     :Judul="item.Judul"
                     :SubJudul="item.SubJudul"
@@ -19,12 +21,12 @@
             </div>
             <div class="flex justify-center items-center">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <UiSolusi 
+                    <CardsSolusi 
                     v-for="item in Solusi2"
                     :Judul="item.Judul"
                     :SubJudul="item.SubJudul"
                     />
-                    <UiSolusi 
+                    <CardsSolusi 
                         v-for="item in Solusi1"
                         :Judul="item.Judul"
                         :SubJudul="item.SubJudul"
