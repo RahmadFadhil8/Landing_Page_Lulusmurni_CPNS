@@ -1,10 +1,12 @@
 <template>
     <section class="py-12 px-4 my-10 items-center bg-orange-50 scroll-mt-24" id="Solusi">
         <div class="px-14 lg:px-48">
+            <div class="max-w-2xl lg:max-w-3xl mx-auto">
+                <h4 class="text-center font-bold text-2xl lg:text-3xl mb-4">Kami Membantu Kamu Belajar dengan Lebih Terarah</h4>
+                <p class="mb-4 text-center">Persiapan CPNS bukan hanya soal banyak belajar, tetapi juga memahami kemampuan diri, membiasakan diri dengan sistem CAT, dan berlatih menggunakan soal yang sesuai standar terbaru.</p>
+            </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                 <div class="text-center lg:text-left">
-                    <h4 class="font-bold text-2xl lg:text-3xl mb-4">Kami Membantu Kamu Belajar dengan Lebih Terarah</h4>
-                    <p class="mb-4">Persiapan CPNS bukan hanya soal banyak belajar, tetapi juga memahami kemampuan diri, membiasakan diri dengan sistem CAT, dan berlatih menggunakan soal yang sesuai standar terbaru.</p>
                     <div class="flex justify-center lg:justify-start">
                         <UiButton class="font-bold text-white">
                             Daftar Sekarang
