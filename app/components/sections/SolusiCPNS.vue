@@ -28,6 +28,7 @@ import char from '~/assets/icon/chart.svg'
 import book from '~/assets/icon/book.svg'
 import trophy from '~/assets/icon/trophy.svg'
 import CAT from '~/assets/images/CAT.jpg'
+import winner from '~/assets/images/winner.jpg'
 
 const Solusi1 = ref([
     {
@@ -54,7 +55,7 @@ const Solusi1 = ref([
         SubJudul:"Membantu meningkatkan rasa percaya diri melalui simulasi yang dirancang mendekati ujian asli.",
         span: "lg:col-span-2",
         icon: trophy,
-        image2:CAT
+        image2:winner
     },
 ])
 </script>
