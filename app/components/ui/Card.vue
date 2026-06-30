@@ -16,11 +16,11 @@ const props = defineProps({
 const cardClass = computed(() => {
     switch (props.variant) {
         case 'Masalah':
-            return 'bg-blue-100'
+            return 'bg-card-masalah'
         case 'Solusi':
-            return 'bg-orange-100'
+            return 'bg-card-solusi'
         case 'Benefit':
-            return 'bg-green-100'
+            return 'bg-card-benefit'
         default:
             return ''
     }

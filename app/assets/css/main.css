@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary:#249CD9;
+  --color-secondary:;
+  --color-hover:#0081c2;
+
+  --color-text-secondary:#249CD9;
+
+  --color-border-button:#249CD9;
+
+  --color-card-masalah:#DBEAFE;
+  --color-card-solusi:#FFEDD5;
+  --color-card-benefit:#DCFCE7;
+}
+
+@utility bg-gradient-hero {
+  background-image: linear-gradient(to top, #FFFFFF, #FFFFFF, #FFFFFF, #FFCFA2);
+}
+
+@utility bg-gradient-product {
+  background-image: linear-gradient(to bottom, #FFEDD5, #FFFFFF);;
+}
+
 html {
   scroll-behavior: smooth;
 }

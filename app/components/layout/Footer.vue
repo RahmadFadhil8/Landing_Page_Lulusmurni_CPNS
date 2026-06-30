@@ -2,14 +2,14 @@
     <footer class="px-6 sm:px-8 lg:px-24 xl:px-40 py-10 bg-[#f8f8f8]">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div class="text-justify">
-                <img src="~/assets/images/lulusMurniASN .png" alt="logo" class="h-13 w-auto mb-4 mx-auto lg:mx-0">
+                <img src="~/assets/images/lulusMurniASN .png" alt="logo Lulus murni ASN" class="h-13 w-auto mb-4 mx-auto lg:mx-0">
                 <p>
                     Lulusmurni.com adalah platform ujian CAT/CBT, tryout, dan sertifikasi berbasis online yang praktis, fleksibel, dan terpercaya. Dirancang untuk memberikan pengalaman belajar interaktif, mendukung persiapanmu secara maksimal, dan membantu meraih karir impian.
                 </p>
                 <div class="flex gap-2 mt-4 justify-start">
-                    <NuxtLink :to= FACEBOOK><img src="~/assets/icon/ic_baseline-facebook.svg" alt=""></NuxtLink>
-                    <NuxtLink :to= INSTAGRAM><img src="~/assets/icon/mdi_instagram.svg" alt=""></NuxtLink>
-                    <NuxtLink :to= TWITTER ><img src="~/assets/icon/mdi_twitter.svg" alt=""></NuxtLink>
+                    <NuxtLink :to= FACEBOOK><img src="~/assets/icon/ic_baseline-facebook.svg" alt="facebook lulusmurni"></NuxtLink>
+                    <NuxtLink :to= INSTAGRAM><img src="~/assets/icon/mdi_instagram.svg" alt=" instagram lulusmurni"></NuxtLink>
+                    <NuxtLink :to= TWITTER ><img src="~/assets/icon/mdi_twitter.svg" alt=" twitter lulusmurni"></NuxtLink>
                 </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
@@ -37,12 +37,12 @@
                     <div class="">
                         <p>Kontak</p>
                         <div class="flex gap-3 mt-2">
-                            <img src="~/assets/icon/ic_baseline-phone.svg" alt="">
+                            <img src="~/assets/icon/ic_baseline-phone.svg" alt="nomor Lulusmurni">
                             <p class="font-bold">{{ PHONE_NUMBER }}</p>
                         </div>
                     </div>
                     <div class="flex gap-3">
-                        <img src="~/assets/icon/ic_baseline-email.svg" alt="">
+                        <img src="~/assets/icon/ic_baseline-email.svg" alt="Email lulusmurni">
                         <p class="font-bold">{{ EMAIL }}</p>
                     </div>
                 </div>

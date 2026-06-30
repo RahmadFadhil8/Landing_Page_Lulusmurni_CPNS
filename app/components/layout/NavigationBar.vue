@@ -8,7 +8,7 @@
   >
     <div class="flex justify-between items-center px-6 lg:px-24 py-4">
       <NuxtLink to="/">
-        <img src="~/assets/images/lulusMurniASN .png" alt="logo" class="h-11 w-auto">
+        <img src="~/assets/images/lulusMurniASN .png" alt="logo lulusmurni" class="h-11 w-auto">
       </NuxtLink> 
       <ul class="hidden lg:flex gap-10">
         <li><NuxtLink to="#CPNS" class="text-sm">Apa itu CPNS?</NuxtLink></li>

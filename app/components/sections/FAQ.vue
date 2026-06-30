@@ -9,7 +9,7 @@
                     :key="index" class="border rounded-lg bg-white shadow-sm overflow-hidden transition-colors duration-300 border-gray-200">
                             <button @click="TombolFAQ(index)" class="w-full flex justify-between items-center px-6 py-4 cursor-pointer hover:bg-gray-50 transition-colors">
                                 <h3 class="text-sm lg:text-base font-bold">{{ item.Pertanyaan }}</h3>
-                                <img src="~/assets/icon/faq-icon.svg" class="transition-transform duration-300":class="activeIndex === index ? 'rotate-90' : ''" alt="icon">
+                                <img src="~/assets/icon/faq-icon.svg" class="transition-transform duration-300":class="activeIndex === index ? 'rotate-90' : ''" alt="lulus murni">
                             </button>
                             
                             <div v-show="activeIndex === index" class="p-3 pl-4 pt-3 lg:pl-6 bg-gray-100">
@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="hidden lg:flex justify-center lg:justify-end">
-                    <img src="~/assets/images/Gambar ASN2.png" alt="" class="h-64 md:h-80 lg:h-80 w-auto">
+                    <img src="~/assets/images/Gambar ASN2.png" alt="lulus murni" class="h-64 md:h-80 lg:h-80 w-auto">
                 </div>
             </div>
         </div>

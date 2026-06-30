@@ -8,7 +8,7 @@
                 <div class="hidden lg:flex justify-center w-full">
                     <img
                     src="~/assets/images/TryoutKami.png"
-                    alt=""
+                    alt="lulus Murni"
                     class="w-64 sm:w-80 h-auto"
                     >
                 </div>
@@ -31,7 +31,7 @@
                         />
                     </div>
                     <div>
-                        <img src="~/assets/images/TryoutKami.png" alt="" class="w-auto h-96">
+                        <img src="~/assets/images/TryoutKami.png" alt="lulus murni" class="w-auto h-96">
                     </div>
                     <div class="flex flex-col gap-8 mt-7">
                         <CardsBenefit 
